@@ -70,10 +70,9 @@ class linkedList{
 
 let value = new linkedList
 
-value.prepend(2)
-value.prepend(8)
-value.prepend(3)
-value.prepend(7)
+for(let i=1 ; i<=5 ; i++){
+    value.prepend(i)
+}
 
-value.deleted(2)
+value.deleted(10)
 console.log(value.print())
