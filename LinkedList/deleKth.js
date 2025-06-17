@@ -50,21 +50,22 @@ class linkedList{
     }
     
     deleted(index){
-        if(index<0 || index>this.size){
-            console.log("Invalid index")
-            return
-        }
-        if(index==0){
-            this.head = this.head.next
-        }else{
-            let prev = this.head
-            for(let i=0 ; i<index-1 ; i++){
-                prev = prev.next
-            }
-            prev.next = prev.next.next
-        }
-        this.size--
+    if(index<0 &&  index>this.size){
+        console.log("Invalide index")
+        return
     }
+    if(index==0){
+        this.head = this.head.next
+    }else{
+        let prev = this.head
+        
+        for(let i=0 ; i<index-1 ; i++){
+            prev = prev.next
+        }
+        prev.next = prev.next.next
+    }
+    this.size--
+}
 }
 
 
@@ -74,5 +75,5 @@ for(let i=1 ; i<=5 ; i++){
     value.prepend(i)
 }
 
-value.deleted(10)
+value.deleted(3)
 console.log(value.print())

@@ -50,20 +50,20 @@ class LinkedList{
     sec(){
         if(this.size<2) return "List is too small"
         
-        let smal = Infinity
-        let sec = Infinity
+        let lar = -Infinity
+        let sec = -Infinity
         let cur = this.head
         
         while(cur){
-            if(cur.value<smal){
-            sec = smal
-            smal = cur.value
-        }else if(cur.value<sec && cur.value!==smal){
+            if(cur.value>lar){
+            sec = lar
+            lar = cur.value
+        }else if(cur.value>sec && cur.value!==lar){
             sec = cur.value
         }
         cur = cur.next
         }
-        return sec === Infinity?"No sec":sec
+        return sec === -Infinity?"No sec":sec
     }
     
     lar(){
@@ -104,4 +104,4 @@ values.append(3)
 values.append(4)
 values.append(2)
 
-console.log(values.lar())
+console.log(values.sec())
