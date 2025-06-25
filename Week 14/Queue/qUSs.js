@@ -1,3 +1,6 @@
+///Oueue using stack
+
+
 class Stack{
     constructor(){
         this.item = new Array()

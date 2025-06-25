@@ -1,3 +1,6 @@
+///Stack using Queue
+
+
 class Queue{
     constructor(){
         this.item = new Array()
