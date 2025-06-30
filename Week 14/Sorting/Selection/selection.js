@@ -16,5 +16,5 @@ function selec(arr){
     return arr
 }
 
-
 console.log(selec([34,73,12,56,98]))
+

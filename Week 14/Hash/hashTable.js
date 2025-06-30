@@ -10,10 +10,7 @@ class HashTable{
             total+=key.charCodeAt(i)
         }
 
-        console.log(total);
-        
         let val = total%this.size
-        console.log("jabajaba",val)
         return val
     }
 
@@ -47,4 +44,8 @@ hashing.set("name: ", "Aswathy")
 hashing.set("Age: ", "22")
 hashing.set("Place: ", "Thrissur")
 
-hashing.display()
+// hashing.remove("name: ")
+// hashing.display()
+
+console.log(hashing.get("name: "));
+
