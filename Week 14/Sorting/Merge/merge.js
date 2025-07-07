@@ -19,7 +19,7 @@ function sorted(left, right){
         }else{
             sorte.push(right.shift())
         }
-    }
+    } 
     return [...sorte, ...left, ...right]
 }
 

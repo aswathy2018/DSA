@@ -10,7 +10,7 @@ function search(arr,target,left,right){
     let middle = Math.floor((left+right)/2)
     
     if(target===arr[middle]){
-        return arr[middle]
+        return middle
     }
     
     if(target>arr[middle]){
@@ -20,4 +20,4 @@ function search(arr,target,left,right){
     }
 }
 
-console.log(val([1,2,3,4,5,6],2))
+console.log(val([1,2,3,4,5,6],3))
