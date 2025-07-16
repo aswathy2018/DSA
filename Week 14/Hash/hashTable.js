@@ -10,7 +10,7 @@ class HashTable{
             total+=key.charCodeAt(i)
         }
 
-        let val = total%this.size
+        let val = total%this.table.length
         return val
     }
 
