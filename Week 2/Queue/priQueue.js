@@ -3,12 +3,12 @@ class PriorityQueue {
         this.items = [];
     }
 
-    enqueue(value, priority) {
-        const newItem = { value, priority };
+    enqueue(value, pri) {
+        const newItem = { value, pri };
 
         let added = false;
         for (let i = 0; i < this.items.length; i++) {
-            if (priority < this.items[i].priority) {
+            if (pri < this.items[i].pri) {
                 this.items.splice(i, 0, newItem);
                 added = true;
                 break;
@@ -39,6 +39,17 @@ class PriorityQueue {
     }
 
     display() {
-        console.log(this.items.map(item => `${item.value} (P:${item.priority})`));
+        console.log(this.items.map(item => `${item.value} (P:${item.pri})`));
     }
 }
+
+
+let prio = new PriorityQueue(6)
+
+prio.enqueue(1,2)
+prio.enqueue(2,3)
+prio.enqueue(3,4)
+prio.enqueue(4,5)
+prio.enqueue(5,1)
+
+prio.display()
