@@ -15,5 +15,4 @@ function pal(name){
 }
 
 
-
 console.log(pal("aswathy"))
