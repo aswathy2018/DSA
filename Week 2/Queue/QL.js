@@ -12,7 +12,7 @@ class QL{
     }
     
     isEmpty(){
-        return this.head==0
+        return this.head==null
     }
     
     enqueue(val){
@@ -66,3 +66,4 @@ class QL{
     }
     
     queue.print()
+    

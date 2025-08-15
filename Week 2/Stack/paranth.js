@@ -19,4 +19,4 @@ function paranth(s){
     return stack.length==0
 }
 
-console.log(paranth("()"))
+console.log(paranth("({})"))

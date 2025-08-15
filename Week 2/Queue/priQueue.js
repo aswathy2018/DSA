@@ -3,6 +3,10 @@ class PriorityQueue {
         this.items = [];
     }
 
+    isEmpty(){
+        return this.items.length===0
+    }
+
     enqueue(value, pri) {
         const newItem = { value, pri };
 
@@ -53,3 +57,6 @@ prio.enqueue(4,5)
 prio.enqueue(5,1)
 
 prio.display()
+
+console.log("Del: ", prio.dequeue())
+console.log("Front: ", queue.front())
