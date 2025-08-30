@@ -30,7 +30,7 @@ class BST{
             if(root.left==null){
                 root.left = node
             }else{
-                this.insertNode(node.root.left)
+                this.insertNode(node,root.left)
             }
         }else{
             if(root.right==null){
@@ -54,4 +54,24 @@ class BST{
         return false
     }
 
+    inOrder(node=this.root){
+        if(node){
+            
+            this.inOrder(node.left)
+            console.log(node.val)
+            this.inOrder(node.right)
+        }
+    }
 }
+
+let tree=new BST()
+
+tree.insert(50)
+tree.insert(7)
+tree.insert(3)
+tree.insert(1)
+tree.insert(9)
+tree.insert(12)
+
+console.log("BFS ");
+tree.inOrder()
