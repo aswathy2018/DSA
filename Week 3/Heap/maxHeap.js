@@ -22,11 +22,11 @@ class Heap{
     }
 
     deleteRoot(){
-        if(this.heap==0){
+        if(this.heap.length==0){
             return null
         }
 
-        if(this.heap==1){
+        if(this.heap.length==1){
             return this.heap.pop()
         }
 

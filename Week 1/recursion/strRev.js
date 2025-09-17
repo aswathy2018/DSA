@@ -4,5 +4,4 @@ function rev(str,index=0){
     }
     return rev(str,index+1)+str[index]
 }
-
 console.log(rev("asd"))
