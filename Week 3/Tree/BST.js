@@ -23,6 +23,7 @@ class BST{
         }else{
             this.insertNode(node,this.root)
         }
+
     }
 
     insertNode(node,root){
@@ -54,12 +55,27 @@ class BST{
         return false
     }
 
-    inOrder(node=this.root){
+    inOrder(node = this.root){
         if(node){
-            
             this.inOrder(node.left)
             console.log(node.val)
             this.inOrder(node.right)
+        }
+    }
+
+    preOrder(node = this.root){
+        if(node){
+            console.log(node.val);
+            this.preOrder(node.left)
+            this.preOrder(node.right)
+        }
+    }
+
+    postOrder(node = this.root){
+        if(node){
+            this.postOrder(node.left)
+            this.postOrder(node.right)
+            console.log(node.val);
         }
     }
 }
