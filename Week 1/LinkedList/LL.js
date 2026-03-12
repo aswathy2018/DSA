@@ -64,9 +64,15 @@ class LinkedList{
 }
 
 let val = new LinkedList()
-val.prepend(1)
-val.prepend(6)
-val.prepend(4)
-val.prepend(9)
+// val.prepend(1)
+// val.prepend(6)
+// val.prepend(4)
+// val.prepend(9)
+
+let i=1
+while(i<=10){
+    val.prepend(i)
+    i++
+}
 
 console.log(val.print())
