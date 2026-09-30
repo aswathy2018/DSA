@@ -6,4 +6,4 @@ function fib(n){
     return arr
 }
 
-console.log(fib(6));
+console.log(fib(9));
