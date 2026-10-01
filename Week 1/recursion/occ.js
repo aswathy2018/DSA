@@ -9,4 +9,4 @@ function occ(arr,fre = {},index=0){
     return occ(arr,fre,index+1)
 }
 
-console.log(occ([1,2,3,2,2,4,2,5]))
+console.log(occ([1,2,3,2,2,4,2,7,0,3,5]))

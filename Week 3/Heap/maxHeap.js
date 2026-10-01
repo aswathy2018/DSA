@@ -74,9 +74,9 @@ let node = new Heap()
 
 node.insert(2)
 node.insert(4)
-node.insert(6)
+node.insert(66)
 node.insert(5)
-node.insert(8)
+node.insert(88)
 node.insert(1)
 
 console.log("Before: ");

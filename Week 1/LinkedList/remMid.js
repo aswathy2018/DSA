@@ -90,11 +90,11 @@ class LinkedList{
 
 let values = new LinkedList
 
-values.append(9)
+values.append(8)
 values.append(3)
-values.append(4)
-values.append(2)
-values.append(1)
+values.append(9)
+values.append(6)
+values.append(5)
 
 values.rem()
 
